@@ -4,7 +4,7 @@ import type { NextRequest } from 'next/server';
 export function middleware(request: NextRequest) {
   // 🔴 Set this to 'true' to ENABLE maintenance mode. 
   // 🟢 Set this to 'false' to DISABLE it and restore the site.
-  const isMaintenanceMode = false;
+  const isMaintenanceMode = true;
 
   // Allow passing through to the maintenance page, static assets, and images
   if (
